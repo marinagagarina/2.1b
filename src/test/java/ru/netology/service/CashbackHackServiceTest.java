@@ -40,12 +40,4 @@ class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
         assertThrows(IllegalArgumentException.class, () -> service.remain(-5));
     }
-   /* @ParameterizedTest
-    @CsvFileSource(resources = "/BonusData.csv", numLinesToSkip = 1)
-    void shouldCalculateBonus(int amount, int expected, String message) {
-        CashbackHackService service = new CashbackHackService();
-        int actual = service.remain(amount);
-        assertEquals(expected, actual, message);
-    }*/
-
 }
